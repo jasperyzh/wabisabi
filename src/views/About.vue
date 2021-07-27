@@ -1,5 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-auto">
+          <h1 class="h5">about</h1>
+          <p>im here to learn</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
