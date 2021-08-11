@@ -12,7 +12,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "p5/global"
     ],
     "paths": {
       "@/*": [
@@ -24,7 +25,18 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    // "noImplicitAny": true,
+    // "preserveConstEnums": true,
+    // "mapRoot": "./sketch/",
+    // "module": "none",
+    // "outFile": "./build/build.js",
+    // "removeComments": true,
+    // "rootDir": "./sketch/",
+    // "sourceMap": true,
+    // "sourceRoot": "./sketch/",
+    // "target": "es5",
+    // "moduleResolution": "node",
   },
   "include": [
     "src/**/*.ts",

@@ -37,8 +37,18 @@
             <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link" to="/vue-playground"
+              >Vue Playground</router-link
+            >
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/js-playground"
               >JS Playground</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/p5-playground"
+              >p5 Playground</router-link
             >
           </li>
         </ul>
@@ -188,7 +198,12 @@ export default defineComponent({
           url: "https://vimhelp.org/",
         },
       ],
-      todos: ["Simple JAMStack Blog", "Dynamic to-do list"],
+      todos: [
+        "Simple JAMStack Blog",
+        "Dynamic to-do list",
+        "Create a database: MySQL",
+        "NuxtJS - after understand VueJS as a whole"
+      ],
       p5js: [
         "p5-typescript-demo",
         // "spiral",

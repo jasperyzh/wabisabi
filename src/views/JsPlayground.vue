@@ -1,6 +1,6 @@
 <template>
   <section id="js-playground">
-    <section id="9_2-js-svg">
+    <article id="9_2-js-svg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-auto">
@@ -32,15 +32,24 @@
           <hr />
         </div>
       </div>
-    </section>
+    </article>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { financial_logger } from "@/components/FinancialLogger";
 
+import { javascript_info } from "@/components/JavascriptInfo";
+
+import { defineComponent } from "vue";
 export default defineComponent({
   methods: {},
+  mounted() {
+    financial_logger();
+
+    javascript_info();
+  },
   setup() {
+    // move js-svg to components
     const switchSvgFill = (event: Event) => {
       //https://stackoverflow.com/questions/63165896/what-is-the-type-of-the-svg-element-in-typescript
       // https://freshman.tech/snippets/typescript/fix-value-not-exist-eventtarget/

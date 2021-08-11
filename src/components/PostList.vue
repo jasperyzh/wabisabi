@@ -3,7 +3,7 @@
     <p>
       <button class="btn disabled">Ordered by: {{ order }}</button>
       <button class="btn btn-warning" @click="toggleOrder()">
-        {{ orderby }}
+        {{ getOrderbyKey(orderby) }}
       </button>
     </p>
     <transition-group name="post" tag="div" class="d-flex flex-wrap">
@@ -29,8 +29,7 @@
 <script lang="ts">
 import { computed, defineComponent, PropType, ref } from "vue";
 import Post from "@/type/Post";
-import OrderTerm from "@/type/OrderTerm";
-import OrderBy from "@/type/OrderBy";
+import { OrderTerm, OrderBy } from "@/type/Order";
 
 export default defineComponent({
   props: {
@@ -46,7 +45,7 @@ export default defineComponent({
   setup(props) {
     const orderedPosts = computed(() => {
       return [...props.posts].sort((a: Post, b: Post) => {
-        if (orderby.value == "asc") {
+        if (orderby.value == OrderBy.ASC) {
           return a[props.order] > b[props.order] ? 1 : -1;
         } else {
           return a[props.order] < b[props.order] ? 1 : -1;
@@ -54,12 +53,24 @@ export default defineComponent({
       });
     });
 
-    const orderby = ref<OrderBy>("desc");
+    const orderby = ref<number>(OrderBy.DESC);
+
     const toggleOrder = () => {
-      orderby.value = orderby.value == "asc" ? "desc" : "asc";
+      orderby.value = orderby.value == OrderBy.ASC ? OrderBy.DESC : OrderBy.ASC;
     };
 
     return { orderedPosts, orderby, toggleOrder };
+  },
+  methods: {
+    getOrderbyKey(orderby: number): string {
+      /**
+       * Getting enum keys in TypeScript
+       * https://www.crojach.com/blog/2019/2/6/getting-enum-keys-in-typescript
+       */
+      let getEnumKey = Object.keys(OrderBy).filter((x) => !(parseInt(x) >= 0));
+
+      return getEnumKey[orderby];
+    },
   },
 });
 </script>

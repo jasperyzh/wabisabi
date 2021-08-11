@@ -3,9 +3,8 @@
 
 import "@/scss/components/FinancialLogger.scss";
 
-document.addEventListener("DOMContentLoaded", () => {
 
-  console.log("FinancialLogger.ts init")
+export const financial_logger = () => {
 
   interface HasFormatter {
     format(): string;
@@ -97,8 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
 
   // select body; insert html
-  const body = document.querySelector("body")! as HTMLElement;
-  body.insertAdjacentHTML("beforeend", insert_html);
+  const main = document.querySelector("#js-playground") as HTMLElement;
+  main.insertAdjacentHTML("beforeend", insert_html);
 
   // select form
   const form = document.querySelector(".financial-logger form.new-item-form") as HTMLFormElement;
@@ -110,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const amount = form.querySelector('#amount') as HTMLInputElement;
 
   // select UL
-  const ul = <HTMLUListElement>document.querySelector('.financial-logger ul.item-list')!;
+  const ul = <HTMLUListElement>document.querySelector('.financial-logger ul.item-list');
 
   // create template
   const list = new ListTemplate(ul);
@@ -131,5 +130,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     list.render(doc, type.value, 'end');
   })
-
-})
+}
