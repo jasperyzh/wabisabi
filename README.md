@@ -1,24 +1,30 @@
 # wabisabi
 
-## Project setup
-```
-npm install
-```
+# 210808
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Personal Finance
+It time to figure out personal finance, before we can do any decision on it, try to track all my assets I have.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- accountants & book-keeping
+- learn the basic of personal finance management
+- get a software to track it (GNUCash)
+- determine the next step: budgeting
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## JavaScript
+Screep as a support?
+
+
+## Workout routine
+Learning the basic of bodybuilding.
+
+Gain the knowledge on how your body react to the routine, 
+- how strength is build
+- how to manage routine to progress
+- coach yourself
+
+
+# Blog feeling 
+- The Misfit Cog
+- Among the Lost Identity/Country
+- A Good Life   

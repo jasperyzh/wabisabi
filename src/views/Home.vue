@@ -100,6 +100,14 @@ export default defineComponent({
      */
     const posts = ref<Post[]>([
       {
+        id: 10,
+        title: "Setting up for Database: MySQL Basic",
+        date: 210815,
+        content:
+          "<p>Fireship taken the first place in my heart as one of the best webdev teacher on YouTube, been going through plenty of knowledgeable videos on explaining things in quick succession with pragmatic jokes inbetween. Also run through a tutorial on setting up WSL, basically running both windows and linux at the same time, benefit in running linux tools and such, although I still fresh and under utilizing linux atm.</p><p><a href='https://fireship.io/lessons/windows-10-for-web-dev/'>Web Development Setup Guide for Windows with Linux (WSL)</a>, a great guide on introducing me to new tool, such as bashrc, zsh, how to install nvm/node/npm, git auth, git-cli and the linux SL train.</p>",
+        excerpt: "Penguin fly through the window",
+      },
+      {
         id: 9,
         title: "Setting up for Database: MySQL Basic",
         date: 210810,

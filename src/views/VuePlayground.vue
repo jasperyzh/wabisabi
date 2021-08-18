@@ -34,18 +34,21 @@
       </div>
     </div>
   </section>
-  <VueIntermediate />
-  <VueFormValidation />
+  <VuePhpSubmit />
+  <!-- <VueIntermediate /> -->
+  <!-- <VueFormValidation /> -->
 </template>
 <script lang="ts">
-import VueIntermediate from "@/components/VueIntermediate.vue";
-import VueFormValidation from "@/components/VueFormValidation.vue";
+// import VueIntermediate from "@/components/VueIntermediate.vue";
+// import VueFormValidation from "@/components/VueFormValidation.vue";
+import VuePhpSubmit from "@/components/VuePhpSubmit.vue";
 
 import { defineComponent } from "vue";
 export default defineComponent({
   components: {
-    VueIntermediate,
-    VueFormValidation,
+    // VueIntermediate,
+    // VueFormValidation,
+    VuePhpSubmit,
   },
   data() {
     return {
