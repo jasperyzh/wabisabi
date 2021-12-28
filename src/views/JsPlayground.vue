@@ -1,5 +1,7 @@
 <template>
   <section id="js-playground">
+    <CssWave />
+
     <article id="9_2-js-svg">
       <div class="container">
         <div class="row justify-content-center">
@@ -36,17 +38,14 @@
   </section>
 </template>
 <script lang="ts">
-import { financial_logger } from "@/components/FinancialLogger";
-
-import { javascript_info } from "@/components/JavascriptInfo";
-
 import { defineComponent } from "vue";
+
+import { financial_logger } from "@/sketch/js/FinancialLogger";
+
 export default defineComponent({
   methods: {},
   mounted() {
     financial_logger();
-
-    javascript_info();
   },
   setup() {
     // move js-svg to components

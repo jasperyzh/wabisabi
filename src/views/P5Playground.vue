@@ -43,7 +43,7 @@ import p5 from "p5";
 // import { fireworks } from "@/sketch/Fireworks";
 // import { maurer_rose } from "@/sketch/MaurerRose";
 // import { hilbert_curve } from "@/sketch/HilbertCurve";
-import { mandelbrot_set } from "@/sketch/MandelbrotSet";
+import { mandelbrot_set } from "@/sketch/p5/MandelbrotSet";
 
 import { defineComponent } from "vue";
 export default defineComponent({

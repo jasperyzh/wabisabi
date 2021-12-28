@@ -1,213 +1,98 @@
 <template>
-  <header class="header">
-    <div class="container-xl">
-      <div class="row justify-content-between py-3">
-        <div class="col-auto">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
-          <a class="btn" href="/">
-            <h1 class="h6 m-0">learn.code.play.satori.</h1>
-          </a>
-        </div>
-
-        <ul class="col-auto nav nav-pills">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/">Home</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/vue-playground"
-              >Vue Playground</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/js-playground"
-              >JS Playground</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/p5-playground"
-              >p5 Playground</router-link
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <Header />
 
   <router-view />
 
-  <!-- offcanvas -->
-  <div
-    class="offcanvas offcanvas-start"
-    tabindex="-1"
-    id="offcanvasExample"
-    aria-labelledby="offcanvasExampleLabel"
-  >
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button
-        type="button"
-        class="btn-close text-reset"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      ></button>
-    </div>
-    <div class="offcanvas-body">
-      <section id="app">
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col">
-              <h2>Quick Link</h2>
-              <ul class="list-group">
-                <li
-                  class="list-group-item"
-                  v-for="(item, idx) in links"
-                  :key="`link-${idx}`"
-                >
-                  <a :href="item.url" target="_blank">{{ item.name }}</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#lightbox"
-                    >/g/'s programming project for n00bz</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col">
-              <h2>To-do List</h2>
-              <ul class="list-group">
-                <li
-                  class="list-group-item"
-                  v-for="(item, idx) in todos"
-                  :key="`todo-${idx}`"
-                >
-                  {{ item }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col">
-              <h2>P5js</h2>
-              <ul class="list-group">
-                <li
-                  class="list-group-item"
-                  v-for="(item, idx) in p5js"
-                  :key="`todo-${idx}`"
-                >
-                  <a :href="`/${item}.html`">{{ item }}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
+  <Sidebar />
 
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="lightbox"
-    tabindex="-1"
-    aria-labelledby="lightboxLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-            <h5 class="modal-title" id="lightboxLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div> -->
-        <div class="modal-body">
-          <figure>
-            <img
-              src="./assets/gprogramming.png"
-              alt="/g/'s programming project for n00bz"
-            />
-          </figure>
+  <section id="note" class="my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <pre>
+https://httpd.apache.org/docs/2.4/getting-started.html
+https://www.askapache.com/htaccess/
+
+6.1: Introduction to TensorFlow.js - https://www.youtube.com/watch?v=Qt3ZABW5lD0
+Machine Learning in JavaScript (TensorFlow Dev Summit 2018) - https://www.youtube.com/watch?v=YB-kfeNIPCE
+ml5 - https://learn.ml5js.org/#/
+throttle/debounce -   https://www.digitalocean.com/community/tutorials/vuejs-lodash-throttle-debounce
+          </pre>
         </div>
-        <!--   <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
       </div>
     </div>
-  </div>
-  <footer class="footer"></footer>
+  </section>
+
+  <section id="test" class="my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <test :stuff="5000" v-model="searchText" :get_url="get_url_test">
+            <template v-slot:header>
+              <h2>This is a test title</h2>
+            </template>
+
+            <template v-slot="slotProps">
+              <!-- <p>A paragraph for the main content.</p>
+              <span v-if="test">"test" is: {{ test }}</span>
+              <hr> -->
+              {{ slotProps.item }} - beautiful!
+            </template>
+
+            <template #footer>
+              <p>Footer - Here's some contact info</p>
+            </template>
+          </test>
+
+          <button @click="addTodo">add todo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed } from "vue";
+
+import Header from "@/components/Header.vue";
+import Sidebar from "@/components/Sidebar.vue";
+import Footer from "@/components/Footer.vue";
+
+import Test from "@/components/Test.vue";
 
 export default defineComponent({
   name: "app",
+  components: {
+    Header,
+    Sidebar,
+    Footer,
+    Test,
+  },
   data() {
     return {
-      links: [
-        {
-          name: "DevDocs",
-          url: "https://devdocs.io/",
-        },
-        {
-          name: "javascript.info",
-          url: "https://javascript.info/",
-        },
-        {
-          name: "typescript",
-          url: "https://www.typescriptlang.org/docs/handbook/intro.html",
-        },
-        {
-          name: "p5js",
-          url: "https://p5js.org/reference/",
-        },
-        {
-          name: "vuejs",
-          url: "https://vuejs.org/v2/guide/",
-        },
-        {
-          name: "bootstrap5",
-          url: "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
-        },
-        {
-          name: "vim",
-          url: "https://vimhelp.org/",
-        },
-      ],
+      test: true,
+      searchText: "hello_world",
+      get_url_test: "https://yesno.wtf/api",
       todos: [
-        "Simple JAMStack Blog",
-        "Dynamic to-do list",
-        "Create a database: MySQL",
-        "NuxtJS - after understand VueJS as a whole"
+        "clean the toilet",
+        "make coffee",
+        "bath cookie",
+        "take nap",
+        "cook food",
       ],
-      p5js: [
-        "p5-typescript-demo",
-        // "spiral",
-      ],
+    };
+  },
+  methods: {
+    addTodo() {
+      this.todos.push("hlelo world");
+    },
+  },
+  provide() {
+    return {
+      todoLength: computed(() => this.todos.length),
+      todoData: computed(() => this.todos),
     };
   },
 });

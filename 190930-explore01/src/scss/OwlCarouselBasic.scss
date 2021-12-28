@@ -1,0 +1,10 @@
+.carousel-1 {
+  .item {
+    background-color: red;
+    height: 300px;
+  }
+  
+  .owl-item:nth-child(odd) .item {
+    background-color: blue;
+  }
+}

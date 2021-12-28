@@ -1,0 +1,248 @@
+<!-- 
+<?php
+if (isset($_POST['submit_contact'])){
+	$url = "https://www.google.com/recaptcha/api/siteverify";
+	$data = [
+		'secret' => '6Lci77AUAAAAAMacpJ0ACBM-kSiWnFTbCh65YCjQ',
+		'response' => $_POST['token'],
+		'remoteip' => $_SERVER['REMOTE_ADDR'],
+	];
+	print_r($data);
+
+	$options = array(
+		'http'	=> array(
+			'header'	=> "Content-type: application/x-www-form-urlencoded\r\n",
+			'method' => 'POST',
+			'content'	=> http_build_query($data),
+		)
+	);
+	print_r($options);
+
+	$context = stream_context_create($options);
+	$response =  file_get_contents($url, false, $context);
+
+	$res = json_decode($response, true);
+	if($res['success']){
+		// save data to database
+		echo '<br>';
+		echo 'data successfully recaptcha';
+	} else {
+		// print error message
+		echo '<br>';z`
+		echo 'sum ting wong';
+	}
+}
+?>
+ -->
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>VueApp</title>
+	<meta name="description" content="VueApp">
+	<meta name="author" content="VueApp">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body class="body">
+	<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+		<!-- <ul class="waves">
+			<li><a href="#">item about page</a></li>
+			<li><a href="#">item wavey thing</a></li>
+			<li><a href="#">item hory shyt</a></li>
+		</ul> -->
+
+	<!-- <section id="photoswipe">
+		<div class="photoswipe__content">
+
+			<h2>First gallery:</h2>
+
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl"
+						data-size="1024x1024">
+						<img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 1</figcaption>
+
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl"
+						data-size="964x1024">
+						<img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 2</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl"
+						data-size="1024x683">
+						<img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 3</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl"
+						data-size="1024x768">
+						<img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 4</figcaption>
+				</figure>
+
+
+			</div>
+
+			<h2>Second gallery:</h2>
+
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl"
+						data-size="964x1024">
+						<img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 2.1</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl"
+						data-size="1024x683">
+						<img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 2.2</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl"
+						data-size="1024x768">
+						<img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail"
+							alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">Image caption 2.3</figcaption>
+				</figure>
+
+
+			</div>
+
+		</div>
+	</section> -->
+
+	<!-- <div id="time">
+		<p>Target Time:</p>
+		<p class="display-4 target-time"></p>
+		<p>Countdown Timer:</p>
+		<p class="display-4 countdown-time"></p>
+		<p>Server Current Time:</p>
+		<p class="display-4 server-time"></p>
+		<p>Client Current Time:</p>
+		<p class="display-4 client-time"></p>
+	</div>
+
+	<section id="petition">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6">
+					<form action="." method="post">
+
+						<div class="form-group">
+							<label for="full_name">Name</label>
+							<input type="text" class="form-control" id="full_name" placeholder="e.g. Tan Ali Rabu">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="e.g. email@email.com">
+						</div>
+
+						<div class="form-group">
+							<label for="state">Select your state</label>
+							<select class="form-control" id="state" name="state">
+								<option value="none" disabled selected>Select State</option>
+								<option value="Johor">Johor</option>
+								<option value="Kedah">Kedah</option>
+								<option value="Kelantan">Kelantan</option>
+								<option value="Kuala Lumpur">Kuala Lumpur</option>
+								<option value="Melaka">Melaka</option>
+								<option value="Negeri Sembilan">Negeri Sembilan</option>
+								<option value="Pahang">Pahang</option>
+								<option value="Perak">Perak</option>
+								<option value="Perlis">Perlis</option>
+								<option value="Pulau Pinang">Pulau Pinang</option>
+								<option value="Sabah">Sabah</option>
+								<option value="Sarawak">Sarawak</option>
+								<option value="Selangor">Selangor</option>
+								<option value="Terengganu">Terengganu</option>
+							</select>
+						</div>
+
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="pdpn">
+							<label class="form-check-label" for="pdpn">Agree to PDPN</label>
+						</div>
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="h-50"></div>
+	<hr>
+	<hr> -->
+
+
+	<!-- vue-app - start -->
+	<!-- <section id="app">
+		<button v-on:click="increase(3, $event)">Click!</button>
+		<p>{{ counter }}</p>
+
+		<p v-on:mousemove="updateCoordinate">
+			Coordinate: {{x}}, {{y}}
+			- <span v-on:mousemove.stop=""> Hello World </span>
+		</p>
+		<input type="text" v-on:keyup.enter="alertMe">
+		<hr>
+		<button v-on:click="showAlert">Show Alert</button>
+		<input type="text" v-on:keyup="keydowningFunc">
+		<p>Keydown value: {{ keydowning }}</p>
+
+		<input type="text" v-on:keydown.enter="keyEnterFunc">
+		<p>KeyEnter value: {{keyEnter}}</p>
+		<p><a v-bind:href="defaultUrl" v-bind:target="getTarget">Google</a></p>
+
+		<hr>
+
+		<p :style="{color: color}">Current Value: {{ value }}</p>
+		<input type="text" v-model="color">
+		<button @click="value += 5">Add 5</button>
+		<button @click="value += 1">Add 1</button>
+		<p>Result: {{ result }}</p>
+
+		<hr>
+	</section> -->
+	<!-- vue-app - end -->
+
+	<script src="./src/apps.js"></script>
+</body>
+
+</html>

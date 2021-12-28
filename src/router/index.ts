@@ -32,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "JsPlayground" */ '../views/JsPlayground.vue')
   },
   {
+    path: '/css-playground',
+    name: 'CSS Playground',
+    component: () => import(/* webpackChunkName: "CssPlayground" */ '../views/CssPlayground.vue')
+  },
+  {
     path: '/post/:id',
     name: "Single Post",
     component: SinglePost,

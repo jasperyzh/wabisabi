@@ -31,7 +31,9 @@
         </div>
         <PostList :posts="posts" :order="order" />
       </div>
+
     </section>
+  
   </div>
 </template>
 
@@ -100,86 +102,43 @@ export default defineComponent({
      */
     const posts = ref<Post[]>([
       {
-        id: 10,
-        title: "Setting up for Database: MySQL Basic",
-        date: 210815,
-        content:
-          "<p>Fireship taken the first place in my heart as one of the best webdev teacher on YouTube, been going through plenty of knowledgeable videos on explaining things in quick succession with pragmatic jokes inbetween. Also run through a tutorial on setting up WSL, basically running both windows and linux at the same time, benefit in running linux tools and such, although I still fresh and under utilizing linux atm.</p><p><a href='https://fireship.io/lessons/windows-10-for-web-dev/'>Web Development Setup Guide for Windows with Linux (WSL)</a>, a great guide on introducing me to new tool, such as bashrc, zsh, how to install nvm/node/npm, git auth, git-cli and the linux SL train.</p>",
-        excerpt: "Penguin fly through the window",
+        id: 13,
+        title: "Test",
+        date: 210830,
+        content: `<p>async/await, promises, callbacks</p>
+        <ul>
+        <li><a href='https://www.youtube.com/watch?v=JRNToFh3hxU' target='_blank'>
+        JavaScript Callbacks, Promises, and Async / Await Explained</a>
+        </li>
+        </ul>`,
+        excerpt: "",
       },
       {
-        id: 9,
-        title: "Setting up for Database: MySQL Basic",
-        date: 210810,
-        content:
-          "<p>Went through a short tutorial on MySQL basic with Fireship. <a href='https://www.youtube.com/watch?v=Cz3WcZLRaWc' target='_blank'>MySQL - The Basics</a></p><p>Next up try out the library to pull data from MySQL with Javascript: <a href='https://sequelize.org/master/' target='_blank'>https://sequelize.org/master/</a></p>",
-        excerpt: "Data Data Data",
+        id: 12,
+        title: "Test",
+        date: 210820,
+        content: `<p>async/await, promises, callbacks</p>
+        <ul>
+        <li><a href='https://www.youtube.com/watch?v=JRNToFh3hxU' target='_blank'>
+        JavaScript Callbacks, Promises, and Async / Await Explained</a>
+        </li>
+        </ul>`,
+        excerpt: "",
       },
       {
-        id: 8,
-        title: "Form Validation with Vue",
-        date: 210806,
-        content:
-          "<p>Need a closer look at form validation with vue, using bootstrapcss. Need a good framework for any future form workflow. Whether it send it data to MySQL or GoogleSheet, need to arm ourselves fast.</p>",
-        excerpt: "A look into form validation",
+        id: 11,
+        title: "Test data ",
+        date: 210819,
+        content: `<p>Understanding the fundamental of HTTP... Let's start reading.</p>
+        <ul>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS' target='_blank'>
+        https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+        </a>
+        </li>
+        </ul>`,
+        excerpt: "Where do we start?",
       },
-      {
-        id: 7,
-        title: "Hilbert Curve & Maurer Rose",
-        date: 210801,
-        content:
-          "<p>Went through the tutorials by CodingTrain, Math is seriously beautiful and not boring. Wish programming was taught to me since young... and I wondered at once point, how do I translate all these to my kid lol.</p><p><small>(Will link these in the future once I figure out the CMS for my site.)</small></p>",
-        excerpt: "Beautiful math at play",
-      },
-      {
-        id: 6,
-        title: "Still on fire!",
-        date: 210730,
-        content:
-          "<p>Completed double pendulum sketch today! also ran through fundamental for JS again, ?? is a new operator I just learned, pretty neat. The files are falling into it place, I gonna keep this going for sure!</p><p>Gotta look into <a href='https://youtu.be/yhaBEBi2EK0' target='_blank'>VueJS Intermediate workshop</a></p>",
-        excerpt: "Gotta remember to exercise too :x",
-      },
-      {
-        id: 5,
-        title: "Space Invader!",
-        date: 210728,
-        content:
-          "<p>Completed the space invader challenge with the coding train! <a href='https://www.youtube.com/watch?v=biN3v3ef-Y0'>Coding Challenge #5: Space Invaders in JavaScript with p5.js</a>.</p><p>Looking for next challenge, either in MySQL or Socket.io. Let's try both!</p><p>Manage to run a little chatroom, but lack the discipline to integrate using vue or typescript, will get back to this later!</p>",
-        excerpt: "Alien visited for moar",
-      },
-      {
-        id: 4,
-        title: "P5.js Setup",
-        date: 210727,
-        content:
-          "<p>Setup P5.js and migrated the demo sketch from the starter template <a href='https://bulkan-evcimen.com/using_parceljs_typescript_p5js' target='_blank'>Using Parcel, TypeScript with p5.js</a>. Not using parcelJS, but still useful to know how to create the instances for p5js and classes.</p><p>Moved all sketches or experiements to JS-Playground, also discovered lazyload vue-router quirk on classic JS: P5js cannot load with</p><code>  component: () => import(/* webpackChunkName: \"js-playground\" */ '../views/JsPlayground.vue')</code><p>I might need to work on CMS/Blog/Database soon. Hardcoding blog is difficult.</p>",
-        excerpt: "Setup sketching stuff",
-      },
-      {
-        id: 3,
-        title: "TypeScript Mania",
-        date: 210727,
-        content:
-          "<p>Despite fatigue, speedrunning through the basic series for TypeScript tutorial, hopefully build something simple after this. <a href='https://www.youtube.com/watch?v=IOzkOXSz9gE&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI&index=18' target='_blank'>TypeScript Tutorial #18 - Generics</a>, hopefully this helps for the long run.</p>",
-        excerpt: "Speed learning stuff",
-      },
-      {
-        id: 2,
-        title: "Just start building",
-        date: 210725,
-        content:
-          "<p>NetNinja series on building Vue3 with typescript, migrating all the code over from the previous setup. <a href='https://www.youtube.com/watch?v=usSBsgWNUZk' target='_blank'>Vue 3 with TypeScript Tutorial</a>.</p><p>Also installing bootstrap and packages instead of CDN.</p>",
-        excerpt: "Already migrating project.",
-      },
-      {
-        id: 1,
-        date: 210723,
-        title: "Start doing some fixing in the gap",
-        content:
-          "<p>(insert markdown) It's easy getting all conceit in my own capabilities, just living day-to-day, pass the day doing minimal work. I have multiple attempts in getting myself into routine to learn new stuff, but always fall shorts after several updates. This might turn out the same, but I'm going to give this a try: working on this folder and solving whatever I need using just this project. See how far I can go.</p><p>For example this post right here, is done using hardcode via vuejs, and eventually I hope to have this post generated through a proper API or CMS.",
-        excerpt:
-          "I did a thing, again. Only this time, everything in this thing.",
-      },
+    
     ]);
 
     const order = ref<OrderTerm>("date");

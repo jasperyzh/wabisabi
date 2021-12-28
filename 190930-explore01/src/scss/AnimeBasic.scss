@@ -1,0 +1,102 @@
+// anime
+.box {
+  display: inline-block;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.css-prop-demo {
+  position: relative;
+  background-color: blue;
+  width: 42px;
+  height: 42px;
+
+  .el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+}
+
+.function-based-params-demo,
+.specific-prop-params-demo {
+  position: relative;
+  background-color: blue;
+  width: 42px;
+  height: 42px;
+
+  .el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    color: goldenrod;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+.color-morph {
+  margin: 1rem auto;
+
+  .el {
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+.function-based-values-demo {
+  position: relative;
+
+  .el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    padding: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+.animation-keyframes-demo {
+  position: relative;
+
+  .el {
+    position: absolute;
+    top: 100;
+    left: 0;
+    background-color: skyblue;
+    border-radius: 13px;
+    padding: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+.property-keyframes-demo {
+  position: absolute;
+  top: 200px;
+  right: 50%;
+
+  .el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lawngreen;
+    border-radius: 13px;
+    padding: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
