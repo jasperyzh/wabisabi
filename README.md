@@ -2,16 +2,12 @@
 
 > parcel src/html/index.html
 
----
-## goodtodo
-
-1. build a basic website for my own use; 
-2. try web-scrap: https://nav.al/
-3. add journal function
-4. dashboard on follow person
-5. 
-6. [Convert images to mosaics in p5.js](https://dev.to/andyhaskell/convert-images-to-mosaics-in-p5js-2dlc)
-
+- [wabisabi | github](#wabisabi--github)
+  - [webform](#webform)
+  - [stalking-bookmarks](#stalking-bookmarks)
+  - [puppeteer-webscrapping](#puppeteer-webscrapping)
+  - [p5js](#p5js)
+  - [journal-log](#journal-log)
 
 ---
 ## webform
@@ -58,14 +54,19 @@ example: [Superstonk](https://www.reddit.com/r/Superstonk/)
 - getting started with web scrapping: https://medium.com/@e_mad_ehsan/getting-started-with-puppeteer-and-chrome-headless-for-web-scrapping-6bf5979dee3e
 
 - test web-scrapping on naval's website: https://nav.al/
-### how to run: puppeteer
-1. navigate to src/js/puppeteer
-2. run "node (filename).js"
 
+> how to run: puppeteer
+> 1. navigate to src/js/puppeteer
+> 2. run "node (filename).js"
 
 
 ---
-## log (to be migrate to journal)
+## p5js
+- [Convert images to mosaics in p5.js](https://dev.to/andyhaskell/convert-images-to-mosaics-in-p5js-2dlc)
+
+---
+## journal-log
+create a json format for journaling, easy to encrypt and migrate
 
 > ## 220104 - installed and run a few examples with puppeteer.js
 > 
@@ -162,4 +163,3 @@ example: [Superstonk](https://www.reddit.com/r/Superstonk/)
 > I did a thing, again. Only this time, everything in this thing.
 > (insert markdown) It's easy getting all conceit in my own capabilities, just living > day-to-day, pass the day doing minimal work. I have multiple attempts in getting myself into > routine to learn new stuff, but always fall shorts after several updates. This might turn out > the same, but I'm going to give this a try: working on this folder and solving whatever I need > using just this project. See how far I can go.
 > For example this post right here, is done using hardcode via vuejs, and eventually I hope to > have this post generated through a proper API or CMS.
-> 
