@@ -3,12 +3,20 @@
 > parcel src/html/index.html
 
 - [wabisabi | github](#wabisabi--github)
+  - [webform](#webform)
   - [stalking-bookmarks](#stalking-bookmarks)
   - [puppeteer-webscrapping](#puppeteer-webscrapping)
   - [p5js](#p5js)
-  - [d3js](#d3js)
-  - [components](#components)
   - [journal-log](#journal-log)
+
+---
+## webform
+create a solid plug n' play lead-generator
+
+1. webform + parsleyjs
+2. mysql/ mongoDB
+3. admin dashboard/ datatables
+
 
 ---
 ## stalking-bookmarks
@@ -56,32 +64,12 @@ example: [Superstonk](https://www.reddit.com/r/Superstonk/)
 ## p5js
 - [Convert images to mosaics in p5.js](https://dev.to/andyhaskell/convert-images-to-mosaics-in-p5js-2dlc)
 
-
----
-## d3js
-try out svg/html manipulation with d3js
-
-- learn D3 - https://observablehq.com/@d3/learn-d3
-- try https://github.com/fiduswriter/Simple-DataTables
-
-data from government
-- [Department of Statistic Malaysia](https://www.dosm.gov.my/v1/)
-- [Data.gov.my](https://www.data.gov.my/)
-
-
-## components
-1. webform > mysql (submit.php) > datatables (get_webform_data.php)
-
-
 ---
 ## journal-log
 create a json format for journaling, easy to encrypt and migrate
 
-> ## 220108 - basic-webform > mysql > datatables.js
-> Finished implement the basic webform that insert into mysql, then found a non-jquery simple-datatables to display & export .csv
-> manage to pull data from .CSV into SimpleDatatables
-
 > ## 220104 - installed and run a few examples with puppeteer.js
+> 
 
 > ## 211230 - Happy New Year Soon
 > Started spring cleaning all my personal items, again. Compressing all my memories into a box, > that is more than enough for myself.
