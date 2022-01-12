@@ -1,5 +1,5 @@
 <template>
-  <form action="http://localhost/wabisabi/submit.php">
+  <form action="http://localhost/wabisabi/src/php/submit.php">
     <div class="mb-3">
       <label for="fullname" class="form-label">Full name</label>
       <input

@@ -3,38 +3,33 @@
 > parcel src/html/index.html
 
 - [wabisabi | github](#wabisabi--github)
-  - [stalking-bookmarks](#stalking-bookmarks)
+- [In the work](#in-the-work)
+  - [wants](#wants)
   - [puppeteer-webscrapping](#puppeteer-webscrapping)
   - [p5js](#p5js)
   - [d3js](#d3js)
-  - [components](#components)
-  - [journal-log](#journal-log)
+- [completed components](#completed-components)
+- [journal-log](#journal-log)
 
 ---
-## stalking-bookmarks
+---
+# In the work
 
-1. follow experts/ trends throughout the internet
-2. person
-   1. industry
-   2. name
-   3. job-title
-   4. contacts
-3. media to follow
-   1. website
-   2. twitter
-   3. interview
-   4. articles
-4. note
-   1. why follow this person?
-   2. summary and log of the person
 
-example: [Superstonk](https://www.reddit.com/r/Superstonk/)
-- a subreddit of gme-apes, over a year of research and uncovered the dirts of financial world
-- occasionally, solid research and conversation released to the forum and peep reviewed for it legitamacy, so far there are no counter-DD against the thesis of GameStop bullish sentiment.
-- other noteable website mentioned:
-  - [GME DD](https://gmedd.com/) - a blog site that follow GameStop businesses closely
-  - [GME Jungle](https://www.reddit.com/r/gmejungle/) - a subreddit create during the turbulance time of superstonk's drama
-
+---
+## wants
+1. [Learn Data Science Tutorial](https://www.youtube.com/watch?v=ua-CiDNNj30)
+2. [How does the internet work? (Full Course)](https://www.youtube.com/watch?v=zN8YNNHcaZc)
+3. GTM/ GA
+4. ParsleyJS
+5. Recaptcha
+6. WP Rest API
+7. Git & Github
+   1. [Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git](https://www.youtube.com/watch?v=Uszj_k0DGsg)
+8. WPDB
+9. MySQL
+10. Datatables Edit
+11. Laravel
 
 
 ---
@@ -69,13 +64,30 @@ data from government
 - [Data.gov.my](https://www.data.gov.my/)
 
 
-## components
-1. webform > mysql (submit.php) > datatables (get_webform_data.php)
+
+
 
 
 ---
-## journal-log
+---
+# completed components
+1. webform > mysql (submit.php) > datatables (get_webform_data.php)
+2. parallax-basic
+
+
+
+
+
+
+---
+---
+# journal-log
 create a json format for journaling, easy to encrypt and migrate
+
+> ## 220110 - parallax halftone
+> added parallax scrolling, easily adapted onto the page, should try it on fishermen website
+>
+> learnt from https://codepen.io/ericjacksonwood/pen/LbVKoa
 
 > ## 220108 - basic-webform > mysql > datatables.js
 > Finished implement the basic webform that insert into mysql, then found a non-jquery simple-datatables to display & export .csv

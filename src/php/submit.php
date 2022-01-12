@@ -88,7 +88,7 @@
 
                 echo '<br>';
 
-                echo '<a href="http://localhost/wabisabi/get_webform_data.php">Go to Datatables</a>';
+                echo '<a href="http://localhost/wabisabi/src/php/get_webform_data.php">Go to Datatables</a>';
 
                 echo '<hr>';
 
