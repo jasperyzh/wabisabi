@@ -17,6 +17,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: "https://jasperyzh.github.io/wabisabi/"
   // base: "https://staging.fishermen-analytics.com/fanalytics/"
   // base: "https://staging.fishermen-analytics.com/yayasan-bold/"
   /* build: {
