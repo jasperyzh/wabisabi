@@ -14,7 +14,7 @@
 
 <body>
     <main>
-
+        <pre>required xampp server running</pre>
         <?php
         $mysqli = new mysqli("localhost", "root", "", "wabisabi");
         if ($mysqli->connect_errno) {

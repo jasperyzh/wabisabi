@@ -1,0 +1,15 @@
+{
+  "name": "bookscraper",
+  "version": "1.0.0",
+  "description": "tutorial_link - https://www.digitalocean.com/community/tutorials/how-to-scrape-a-website-using-node-js-and-puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^13.1.3"
+  }
+}

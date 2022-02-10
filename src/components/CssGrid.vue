@@ -250,6 +250,101 @@
       <div class="rellax" data-rellax-speed="7">I’m super fast!!</div>
       <div class="rellax" data-rellax-speed="-4">I’m extra slow and smooth</div>
     </section>
+
+    <section id="products">
+      <pre>https://www.youtube.com/watch?v=sKFW3wek21Q</pre>
+      <div class="product-grid">
+        <div class="card stacked featured">
+          <img
+            src="https://via.placeholder.com/512x512"
+            alt="a grey baseball hat with a small palm tree on the front"
+            class="card__img"
+          />
+          <div class="card__content">
+            <div class="nice">
+              <h3>Very.</h3>
+              <p>Nice.</p>
+            </div>
+            <h2 class="card__title">Lorem, ipsum dolor.</h2>
+            <p class="card__price">$325</p>
+            <p class="card__description">Lorem, ipsum dolor.</p>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/300x800"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Ullam, cum ut.</h2>
+            <p class="card__price">$315</p>
+            <p class="card__description">Iure, voluptate corrupti.</p>
+          </div>
+        </div>
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/512x512"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Libero, ab dolorem?</h2>
+            <p class="card__price">$225</p>
+            <p class="card__description">Eveniet, necessitatibus id.</p>
+          </div>
+        </div>
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/300x800"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Minima, earum ipsam.</h2>
+            <p class="card__price">$500</p>
+            <p class="card__description">Illo, dolorem magnam?</p>
+          </div>
+        </div>
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/512x512"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Odio, nam consequatur.</h2>
+            <p class="card__price">$255</p>
+            <p class="card__description">Quos, facere alias.</p>
+          </div>
+        </div>
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/1024x768"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Quidem, aut numquam!</h2>
+            <p class="card__price">$345</p>
+            <p class="card__description">Aliquid, enim ea.</p>
+          </div>
+        </div>
+        <div class="card stacked">
+          <img
+            src="https://via.placeholder.com/512x512"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Accusantium, placeat dolores?</h2>
+            <p class="card__price">$105</p>
+            <p class="card__description">Corporis, commodi facilis!</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -285,13 +380,94 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+#products {
+  padding: 1rem;
+  .product-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .stacked {
+    display: grid;
+  }
+  .stacked > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .card {
+    aspect-ratio: 1/ 1.2;
+  }
+  .card__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .card__content {
+    background: white;
+    align-self: end;
+    margin: 0.5rem 0.5rem 2rem;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 1rem rgb(0 0 0 / 0.3);
+  }
+  .card__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: rebeccapurple;
+  }
+  .card__price {
+    font-size: 2rem;
+  }
+  @media (min-width: 40rem) {
+    .card.featured {
+      grid-row: span 2;
+      grid-column: span 2;
+      .card__img {
+        aspect-ratio: 1/1.1;
+      }
+      .card__title {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  @media (min-width: 60rem) {
+    .card__img {
+      aspect-ratio: 1/1.1;
+    }
+  }
+  .nice {
+    background-color: royalblue;
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+    width: min(40%, 300px);
+    margin-inline: auto;
+    text-align: center;
+
+    padding: max(3vh, 1rem) 1.5rem;
+    margin-bottom: max(5vh, 1rem);
+    h3 {
+      // https://utopia.fyi/
+      font-size: clamp(1rem, 10vw + 1rem, 5rem);
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+</style>
 <style>
 .testgrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  grid-template-columns: 1fr;
 }
-#cssgrid .cssgrid__span-2{
+@media (min-width: 1024px) {
+  .testgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#cssgrid .cssgrid__span-2 {
   grid-column: span 2;
 }
 :root {
@@ -469,9 +645,6 @@ h3 {
   gap: 1rem;
   grid-template-columns: 1fr;
 }
-.grid-col-span-2 {
-  grid-column: span 2;
-}
 @media (min-width: 768px) {
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -502,13 +675,18 @@ h3 {
   background-color: gold;
 
   padding: 1rem 0;
-  grid-template-columns:
-    minmax(calc(50% / 1.618), 100%) calc(50% / 2.618) calc(50% / 3.618) calc(
-      50% / 4.618
-    )
-    calc(50% / 5.618);
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: end;
+}
+@media (min-width: 1024px) {
+  #cssgrid {
+    grid-template-columns:
+      minmax(calc(50% / 1.618), 100%) calc(50% / 2.618) calc(50% / 3.618) calc(
+        50% / 4.618
+      )
+      calc(50% / 5.618);
+  }
 }
 
 .item {

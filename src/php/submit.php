@@ -12,6 +12,7 @@
 
 <body>
     <main>
+        <pre>required xampp server running</pre>
         <div class="container">
             <div class="row">
 
