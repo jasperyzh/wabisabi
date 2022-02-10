@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./scss/style.scss";
 
-/* import Home from "./page/Home.vue";
+import Home from "./page/Home.vue";
 import About from "./page/About.vue";
 import Masonry from "./components/Masonry.vue";
 
@@ -24,7 +24,7 @@ const router = createRouter({
 
 insert_vue_container('App', 'col', 'row g-0', 'container-fluid g-0');
 import App from './App.vue'
-createApp(App).use(router).mount('#App') */
+createApp(App).use(router).mount('#App')
 
 /**
  * basic-webform
@@ -82,11 +82,11 @@ createApp(CssGridStrasburgo).mount('#CssGridStrasburgo')
 /**
  * Yayasan
  */
-import "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js";
+/* import "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js";
 import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js";
 insert_vue_container('Yayasan', '', '', '');
 import Yayasan from './client/petronas-yayasan/Yayasan.vue';
-createApp(Yayasan).mount('#Yayasan')
+createApp(Yayasan).mount('#Yayasan') */
 
 
 /**

@@ -53,13 +53,6 @@
       </div>
     </div>
   </nav>
-  <i className="icon bi-envelope"></i>
-  <svg class="bi" width="32" height="32" fill="#ff0000">
-    <use xlink:href="bootstrap-icons.svg#bootstrap" />
-  </svg>
-  <svg class="bi" width="32" height="32" fill="#ff0000">
-    <use xlink:href="icons/bootstrap-icons.svg#bootstrap" />
-  </svg>
   <router-view></router-view>
 </template>
 
