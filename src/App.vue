@@ -26,9 +26,16 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
+          <li
+            class="nav-item"
+            v-for="(item, index) in nav_items"
+            :key="`navitem-${index}`"
+          >
+            <router-link class="nav-link" :to="`/${index}`">{{
+              item
+            }}</router-link>
           </li>
+
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -55,7 +62,19 @@
   </nav>
   <router-view></router-view>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      nav_items: {
+        about: "About",
+        // p5js: "P5js",
+        d3js: "D3js",
+      },
+    };
+  },
+};
+</script>
 <style lang="scss">
 @use "./scss/abstracts" as *;
 .navbar-toggler {

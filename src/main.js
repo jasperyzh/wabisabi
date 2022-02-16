@@ -7,13 +7,57 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./scss/style.scss";
 
+
 import Home from "./page/Home.vue";
 import About from "./page/About.vue";
+import D3js from "./page/D3js.vue";
+// import P5js from "./page/P5js.vue";
 import Masonry from "./components/Masonry.vue";
+
+
+/**
+ * change <code.marked /> into markdown
+ * 
+ * todo: make method global within .vue
+ */
+import { marked } from 'marked';
+
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  // highlight: function (code, lang) {
+  //   const hljs = require('highlight.js');
+  //   const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+  //   return hljs.highlight(code, { language }).value;
+  // },
+  // langPrefix: 'hljs language-', // highlight.js css expects a top-level 'hljs' class.
+  // pedantic: false,
+  gfm: true,
+  breaks: true,
+  // sanitize: false,
+  // smartLists: true,
+  // smartypants: false,
+  // xhtml: false
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.marked').forEach(item => {
+    console.log(item.innerHTML)
+    item.innerHTML = marked(item.innerHTML, {
+
+      gfm: true,
+      breaks: true,
+    })
+  })
+})
+
+// import base from '../vite.config';
+// console.log(base);
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
+  { path: '/d3js', component: D3js },
+  // // { path: '/p5js', component: P5js },
   { path: '/masonry', component: Masonry },
 ]
 
@@ -118,3 +162,11 @@ fetch('dream.md')
   .then(response => response.text())
   .then(result => document.getElementById('Dream').innerHTML = marked(result));
  */
+
+
+/**
+ * p5js - setup/mosaic sketch
+ */
+/* insert_vue_container('P5jsSetup', '', '', 'container-fluid g-0');
+import P5jsSetup from './p5js/setup.vue'
+createApp(P5jsSetup).mount('#P5jsSetup') */

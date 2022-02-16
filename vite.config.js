@@ -17,10 +17,18 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: "https://jasperyzh.github.io/wabisabi/"
+
+  // deploy to gh-pages
+  base: "https://jasperyzh.github.io/wabisabi/",
+  build: {
+    assetsDir: process.env.NODE_ENV === 'production' ? './wabisabi/assets/' : './'
+  }
+  // base: process.env.NODE_ENV === 'production' ? '/<REPO>/' : './',
   // base: "https://staging.fishermen-analytics.com/fanalytics/"
   // base: "https://staging.fishermen-analytics.com/yayasan-bold/"
   /* build: {
+    
+    minify: true,
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'fanalytics/index.html'),
@@ -28,4 +36,7 @@ export default defineConfig({
       }
     }
   } */
+
 })
+// console.log(process.env.NODE_ENV)
+// process.env.NODE_ENV === 'production' ? '/my-app/' : '/'
