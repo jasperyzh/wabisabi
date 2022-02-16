@@ -19,10 +19,12 @@ export default defineConfig({
   },
 
   // deploy to gh-pages
-  base: "https://jasperyzh.github.io/wabisabi/",
-  build: {
-    assetsDir: process.env.NODE_ENV === 'production' ? './wabisabi/assets/' : './'
-  }
+  // base: "https://jasperyzh.github.io/wabisabi/",
+  // build: {
+  //   assetsDir: process.env.NODE_ENV === 'production' ? './wabisabi/assets/' : './'
+  // }
+
+  
   // base: process.env.NODE_ENV === 'production' ? '/<REPO>/' : './',
   // base: "https://staging.fishermen-analytics.com/fanalytics/"
   // base: "https://staging.fishermen-analytics.com/yayasan-bold/"
