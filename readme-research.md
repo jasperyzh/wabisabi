@@ -11,6 +11,27 @@
 - 220216 - [53 - Building DeFi on Layer 2 | Synthetix, Loopring, Immutable](https://www.youtube.com/watch?v=PuZ8kUueG10)
 - 220216 - [Debrief | Building DeFi On Layer 2](https://www.youtube.com/watch?v=MOsfXV11TcI)
 
+## Web3 [Foundational]
+- Loopring
+- ImmutableX
+- Metamask
+- NFT - Minting - Marketplace?
+- DAO - which to look out for
+- Blockchain - Ethereum
+- Dapp - Wallet
+
+## Web2 [Foundational]
+- https
+- API
+- 
+
+### Ethereum
+- [ ] [DEVCON1: Understanding the Ethereum Blockchain Protocol - Vitalik Buterin Jan 2016](https://www.youtube.com/watch?v=gjwr-7PgpN8) 
+
+1. What is it? What does it do? How does it helps?
+2. Where did it stand on the "layer"? how does it effect the area its in?
+3. Compile links and saved it.
+4. Write an articles on how I research and what I learnt.
 
 ## API: Bitly
 - branded links and the ability to redirect any link

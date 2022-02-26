@@ -15,6 +15,8 @@ Deep dive into my own consciousness.
 
 ## 【👁 Anti-Dreaming &amp; Meditation Herb】(3g) Wild Lion's Ear Flowers (Leonotis Nepetifolia) Calming Flowers 野生狮耳花 镇静花  睡眠花
 
+# recipe
+- [ ] [Infuse Anything with this Simple Cannabis Coconut Oil Recipe](https://www.veriheal.com/blog/infuse-anything-with-this-simple-cannabis-coconut-oil-recipe/)
 
 # log
 ## 220212
