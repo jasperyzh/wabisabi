@@ -1,0 +1,35 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"locale": "en_GB",
+	"api.token": "4504540e9522936d60bd105d66b20911cbe764a8b355d811147bc373787815ec3087ca3881fa3959e5281d096cf90547721435520568aa096f0a81dd60097449",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"spellChecker.language": "en-US",
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"editor.codeView": true,
+	"sync.target": 2,
+	"sync.2.path": "C:\\xampp\\htdocs\\wabisabi\\_note"
+}
