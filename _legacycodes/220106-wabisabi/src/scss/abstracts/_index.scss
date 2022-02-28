@@ -1,0 +1,10 @@
+@forward "~bootstrap/scss/bootstrap";
+@forward "./colors";
+
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

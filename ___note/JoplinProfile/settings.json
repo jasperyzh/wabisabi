@@ -1,0 +1,46 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"locale": "en_GB",
+	"api.token": "0051c721036007031b7d0d4d38522d5635efaff935acdec25f82b53ffa23e666f4a48b2d87ae0edaccff37baa6e97b343abf945d3e42b2fa03daaaa79879a6ac",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"spellChecker.language": "en-US",
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 258,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"sync.target": 2,
+	"sync.2.path": "C:\\xampp\\htdocs\\wabisabi\\___note",
+	"notes.sortOrder.field": "title",
+	"notes.sortOrder.reverse": false,
+	"notes.perFieldReverse": {
+		"user_updated_time": true,
+		"user_created_time": true,
+		"title": false,
+		"order": false
+	},
+	"editor.codeView": true,
+	"notes.perFolderSortOrders": {},
+	"clipperServer.autoStart": true,
+	"windowContentZoomFactor": 100
+}

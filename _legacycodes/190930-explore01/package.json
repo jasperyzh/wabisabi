@@ -1,0 +1,38 @@
+{
+  "name": "vueapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "assemble": "^0.24.3",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "grunt": "^0.4.5",
+    "jquery": "^3.4.1",
+    "jquery-ui-dist": "^1.12.1",
+    "lib": "^4.0.2",
+    "masonry-layout": "^4.2.2",
+    "owl.carousel": "^2.3.4",
+    "parsleyjs": "^2.9.1",
+    "photoswipe": "^4.1.3",
+    "popper": "^1.0.1",
+    "popper.js": "^1.15.0",
+    "styles": "^0.2.1",
+    "vue": "^2.6.10",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.22.7"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}

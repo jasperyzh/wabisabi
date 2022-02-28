@@ -1,4 +1,0 @@
-
-var UIController = (function(){
-
-})();

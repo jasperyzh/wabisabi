@@ -1,4 +1,0 @@
-
-var budgetController = (function(){
-   
-})();

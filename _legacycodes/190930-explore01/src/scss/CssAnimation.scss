@@ -1,0 +1,43 @@
+.waves {
+  a {
+    display: inline-block;
+    position: relative;
+    margin-top: 1rem;
+
+    &:hover::before,
+    &:hover::after {
+      // default line
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 20px;
+      bottom: -5px;
+
+      background: radial-gradient(16px, transparent, transparent 4px, black 4px, black 10px, transparent 11px);
+      background-size: 30px 40px;
+      background-position: 0 0;
+      animation: move 1s infinite linear;
+    }
+
+    &:hover::after {
+      height: 20px;
+      bottom: -25px;
+      left: 0;
+      background-position: 15px -20px;
+      animation: move2 1s infinite linear;
+    }
+  }
+}
+
+@keyframes move {
+  to {
+    background-position-x: 60px;
+  }
+}
+
+@keyframes move2 {
+  to {
+    background-position-x: 75px;
+  }
+}
